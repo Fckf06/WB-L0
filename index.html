@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script defer type="module" src="./index.js"></script>
+  <title>L0</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header__item header-menu">
+        <div class="header-menu__icon-button">
+          <span></span>
+        </div>
+        <div class="header-menu__logo">ТОВАРЫ И ТОЧКА</div>
+      </div>
+      <div class="header__item header-search">
+        <form>
+          <input placeholder="Я ищу..."/>
+          <button><span></span></button>
+        </form>
+      </div>
+      <div class="header__item header-buttons">
+        <div class="header-buttons__button">
+          <img src="./src/img/user.png"/>
+          <div>Профиль</div>
+        </div>
+        <div class="header-buttons__button__bucket">
+          <img src="./src/img/basket.png"/>
+          <span id="bucket-amount">3</span>
+          <div>Корзина</div>
+        </div>
+      </div>
+    </header>
+      <main>
+        <div class="wrapper__main">
+          <h1>Корзина</h1>
+          <section class="goods-list">
+            <article class="goods-list__item selected-goods">
+              <div class="selected-goods__accordion accordion">
+                <input class="select-checkbox checkbox" checked id="styled-checkbox" type="checkbox"/>
+                <span class="custom-checkbox"></span>
+                <label for="checkbox">Выбрать все</label>
+                <button class="accordion__button" id="accordion-selected"></button>
+              </div>
+              <div class="line"></div>
+              <div class="selected-goods__list">
+                <article class="selected-goods__item item-goods">
+                    <input class="item-goods__checkbox checkbox" checked id="styled-checkbox" type="checkbox"/>
+                    <span class="item-goods__custom-checkbox custom-checkbox"></span>
+                    <div class="item-goods__content-wrapper">
+                      <div class="item-goods__img">
+                        <img src="./src/img/item-1.png" alt="Футболка"/>
+                      </div>
+                      <div class="item-goods__content">
+                        <div class="item-goods__name">Футболка UZcotton мужская</div>
+                        <div class="item-goods__description">
+                          <span>Цвет: белый</span>
+                          <span>Размер: 56</span>
+                        </div>
+                        <div class="item-good__producer">
+                          <span>Коледино WB</span>
+                          <span>OOO Вайлдберриз
+                            <span></span>
+                            <div class="item-good__producer-info">
+                              <div>OOO «МЕГАПРОФСТИЛЬ»</div>
+                              <div>ОГРН: 5167746237148</div>
+                              <div>129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</div>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="item-goods__calculation">
+                      <div class="item-goods__counter">
+                        <div class="item-goods__counter-items counter-1">
+                          <button class="counter__del limit-button">−</button>
+                          <span>1</span>
+                          <button class="counter__add">+</button>
+                        </div>
+                        <div class="item-goods__rest">Осталось 2 шт.</div>
+                        <div class="item-goods__icons">
+                          <span class="like"></span>
+                          <span class="delete"></span>
+                        </div>
+                      </div>
+                      <div class="item-goods__price price_1">
+                        <div class="price__1">522 <span>сом</span></div>
+                        <div>1051 сом</div>
+                        <div  class="item-goods__price-info">
+                          <div>
+                            <span>Скидка 55%</span>
+                            <span>−300 сом</span>
+                          </div>
+                          <div>
+                            <span>Скидка покупателя 10%</span>
+                            <span>−30 сом</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </article>
+                <article class="selected-goods__item item-goods">
+                  <input class="item-goods__checkbox checkbox" checked id="styled-checkbox" type="checkbox"/>
+                  <span class="item-goods__custom-checkbox custom-checkbox"></span>
+                  <div class="item-goods__content-wrapper">
+                    <div class="item-goods__img">
+                      <img src="./src/img/item-2.png" alt="Чехол"/>
+                    </div>
+                    <div class="item-goods__content">
+                      <div class="item-goods__name">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</div>
+                      <div class="item-goods__description">
+                        <span>Цвет: прозрачный</span>
+                        <span></span>
+                      </div>
+                      <div class="item-good__producer">
+                        <span>Коледино WB</span><span>OOO Мегапрофстиль
+                          <span></span>
+                          <div class="item-good__producer-info">
+                            <div>OOO «МЕГАПРОФСТИЛЬ»</div>
+                            <div>ОГРН: 5167746237148</div>
+                            <div>129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-goods__calculation">
+                    <div class="item-goods__counter">
+                      <div class="item-goods__counter-items counter-2">
+                        <button class="counter__del">−</button>
+                        <span>200</span>
+                        <button class="counter__add">+</button>
+                      </div>
+                      <div class="item-goods__rest"></div>
+                      <div class="item-goods__icons">
+                        <span class="like"></span>
+                        <span class="delete"></span>
+                      </div>
+                    </div>
+                    <div class="item-goods__price price_2">
+                      <div class="price__2">2 100 047 <span>сом</span></div>
+                      <div>2 300 047 сом</div>
+                      <div  class="item-goods__price-info">
+                        <div>
+                          <span>Скидка 55%</span>
+                          <span>−300 сом</span>
+                        </div>
+                        <div>
+                          <span>Скидка покупателя 10%</span>
+                          <span>−30 сом</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="selected-goods__item item-goods">
+                  <input class="item-goods__checkbox checkbox" checked id="styled-checkbox" type="checkbox"/>
+                  <span class="item-goods__custom-checkbox custom-checkbox"></span>
+                  <div class="item-goods__content-wrapper">
+                    <div class="item-goods__img">
+                      <img src="./src/img/item-3.png" alt="Карандаши"/>
+                    </div>
+                    <div class="item-goods__content">
+                      <div class="item-goods__name">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell </div>
+                      <div class="item-goods__description">
+                      </div>
+                      <div class="item-good__producer">
+                        <span>Коледино WB</span>
+                        <span>OOO Вайлдберриз
+                          <span></span>
+                          <div class="item-good__producer-info">
+                            <div>OOO «МЕГАПРОФСТИЛЬ»</div>
+                            <div>ОГРН: 5167746237148</div>
+                            <div>129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-goods__calculation">
+                    <div class="item-goods__counter">
+                      <div class="item-goods__counter-items counter-3">
+                        <button class="counter__del">−</button>
+                        <span>2</span>
+                        <button class="counter__add limit-button">+</button>
+                      </div>
+                      <div class="item-goods__rest">Осталось 2 шт.</div>
+                      <div class="item-goods__icons">
+                        <span class="like"></span>
+                        <span class="delete"></span>
+                      </div>
+                    </div>
+                    <div class="item-goods__price price_3">
+                      <div class="price__1">494 <span>сом</span></div>
+                      <div>950 сом</div>
+                      <div  class="item-goods__price-info">
+                        <div>
+                          <span>Скидка 55%</span>
+                          <span>−300 сом</span>
+                        </div>
+                        <div>
+                          <span>Скидка покупателя 10%</span>
+                          <span>−30 сом</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </article>
+            <article class="goods-list__item missing-goods"> 
+              <div class="missing-goods__accordion accordion">
+                <p>Отсутствуют · 3 товара</p>
+                <button class="accordion__button" id="accordion-missing"></button>
+              </div>
+              <div class="line"></div>
+              <div class="missing-goods__list">
+                <article class="missing-goods__item item-missing">
+                  <div class="item-missing__content-wrapper">
+                    <div class="item-missing__img">
+                      <img src="./src/img/item-1.png" alt="Футболка"/>
+                    </div>
+                    <div class="item-missing__content">
+                      <div class="item-missing__name">Футболка UZcotton мужская</div>
+                      <div class="item-missing__description">
+                        <span>Цвет: белый</span>
+                        <span>Размер: 56</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-missing__icons">
+                    <span class="like"></span>
+                    <span class="delete"></span>
+                  </div>
+                </article>
+                <article class="missing-goods__item item-missing">
+                  <div class="item-missing__content-wrapper">
+                    <div class="item-missing__img">
+                      <img src="./src/img/item-2.png" alt="Чехол"/>
+                    </div>
+                    <div class="item-missing__content">
+                      <div class="item-missing__name">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</div>
+                      <div class="item-missing__description">
+                        <span>Цвет: прозрачный</span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-missing__icons">
+                    <span class="like"></span>
+                    <span class="delete"></span>
+                  </div>
+                </article>
+                <article class="missing-goods__item item-missing">
+                  <div class="item-missing__content-wrapper">
+                    <div class="item-missing__img">
+                      <img src="./src/img/item-3.png" alt="Карандаши"/>
+                    </div>
+                    <div class="item-missing__content">
+                      <div class="item-missing__name">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell</div>
+                      <div class="item-missing__description">
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-missing__icons">
+                    <span class="like"></span>
+                    <span class="delete"></span>
+                  </div>
+                </article>
+              </div>
+            </article>
+          </section>
+          <section class="goods-delivery">
+            <article class="goods-delivery__delivery">
+              <div class="delivery__header">
+                <h2>Способ доставки</h2>
+                <button class="modal__button">Изменить</button>
+              </div>
+              <div class="delivery__point">
+                <div class="delivery__name">Пункт выдачи</div>
+                <div class="delivery__address">
+                  <div>Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
+                  <div class="delivery__rate">
+                    <div>
+                      <span></span>
+                      <span>4.99</span>
+                    </div>
+                    <div>Ежедневно с 10 до 21 </div>
+                  </div>
+                </div>
+              </div>
+              <div class="delivery__cost">
+                <div>Стоимость доставки</div>
+                <div> Бесплатно</div>
+              </div>
+              <div class="delivery__date">
+                <div>5—6 февраля</div>
+                <div class="delivery__items">
+                  <div><img src="./src/img/item-1.png" alt="Футболка"><span></span></div>
+                  <div><img src="./src/img/item-2.png" alt="Чехол"><span>184</span></div>
+                  <div><img src="./src/img/item-3.png" alt="Карандаши"><span>2</span></div>
+                </div>
+              </div>
+              <div class="delivery__date">
+                <div>7—8 февраля</div>
+                <div class="delivery__items">
+                  <div><img src="./src/img/item-2.png" alt="Чехол"><span>16</span></div>
+                </div>
+              </div>
+              <div class="delivery__notice">
+                <span></span>
+                <span>
+                  Обратная доставка товаров на склад при отказе —<span>бесплатно</span>
+                  <span class="delivery-return__hide--main">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</span>
+              </span>
+              </div>
+              <section class="modal__delivery modal">
+                <div class="modal__content modal__content--delivery">
+                  <div class="modal__title">
+                    <div>Способ оплаты</div>
+                    <button class="modal__close-btn"></button>
+                  </div>
+                  <div class="modal__choice">
+                    <button class="modal__choice-inactive">В пункт выдачи</button>
+                    <button>Курьером</button>
+                  </div>
+                  <div>Мои адреса</div>
+                  <form class="modal__form">
+                    <div class="form-wrapper"> 
+                      <div class="modal__input modal__input--delivery">
+                        <input checked type="radio" name="card"/>
+                        <span></span>
+                        <label>
+                          <span class="radio__text">Бишкек, улица Табышалиева, 57</span>
+                        </label>
+                        <button class="modal_del-button"></button>
+                      </div>
+                      <div class="modal__input modal__input--delivery">
+                        <input type="radio" name="card"/>
+                        <span></span>
+                        <label>
+                          <span class="radio__text">Бишкек, улица Жукеева-Пудовкина, 77/1</span>
+                        </label>
+                        <button class="modal_del-button"></button>
+                      </div>
+                      <div class="modal__input modal__input--delivery">
+                        <input type="radio" name="card"/>
+                        <span></span>
+                        <label>
+                          <span class="radio__text">Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</span>
+                        </label>
+                        <button class="modal_del-button"></button>
+                      </div>
+                    </div>
+                    <div class="modal__button modal__button--delivery">
+                      <button class="delivery__submit">Выбрать</button>
+                    </div> 
+                  </form>
+                </div>
+              </section>
+            </article>
+            <article class="goods-delivery__payment">
+              <div class="payment__header">
+                <h2>Способ оплаты</h2>
+                <button class="modal__button">Изменить</button>
+              </div>
+              <div class="payment__account">
+                <span class="payment__icon">
+                  <span class="icon-mir"></span>
+                </span>
+                <span>1234 56•• •••• 1234</span>
+                <span>01/30</span>
+              </div>
+              <div class="payment__notice">Спишем оплату с карты при получении</div>
+              <section class="modal__payment modal">
+                <div class="modal__content">
+                  <div class="modal__title">
+                    <div>Способ оплаты</div>
+                    <button class="modal__close-btn"></button>
+                  </div>
+                  <form class="modal__form">
+                    <div class="form-wrapper">
+                      <div class="modal__input input-payment">
+                        <input checked type="radio" name="card"/>
+                        <span></span>
+                        <label>
+                          <span class="radio__icon"><span class="icon-mir"></span></span>
+                          <span class="radio__text">1234 56•• •••• 1234</span>
+                        </label>
+                      </div>
+                      <div class="modal__input input-payment">
+                        <input type="radio" name="card"/>
+                        <span></span>
+                        <label>
+                          <span class="radio__icon"><span class="icon-visa"></span></span>
+                          <span class="radio__text">1234 56•• •••• 1234</span>
+                        </label>
+                      </div>
+                      <div class="modal__input input-payment">
+                        <input type="radio" name="card"/>
+                        <span></span>
+                        <label>
+                          <span class="radio__icon"><span class="icon-mastercard"></span></span>
+                          <span class="radio__text">1234 56•• •••• 1234</span>
+                        </label>
+                      </div>
+                      <div class="modal__input input-payment">
+                        <input type="radio" name="card"/>
+                        <span></span>
+                        <label>
+                          <span class="radio__icon"><span class="icon-maestro"></span></span>
+                          <span class="radio__text">1234 56•• •••• 1234</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="modal__button modal__button--payment">
+                      <button class="payment__submit">Выбрать</button>
+                    </div>
+                  </form>
+                </div>
+              </section>
+            </article>
+            <article class="goods-delivery__reсeiver">
+              <h2>Получатель</h2>
+              <form class="receiver__form">
+                <div class="receiver__fullname">
+                  <div>
+                    <input required id="name"/>
+                    <label for="name">Имя</label>
+                    <span></span>
+                  </div>
+                  <div>
+                    <input required id="surname"/>
+                    <label for="surname">Фамилия</label>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="receiver__contacts">
+                  <div>
+                    <input required id="email"/>
+                    <label for="email">Почта</label>
+                    <span></span>
+                  </div>
+                  <div>
+                    <input required id="tel"/>
+                    <label for="tel">Телефон</label>
+                    <span></span>
+                  </div>
+                  <div>
+                    <input required id="inn"/>
+                    <label for="inn">ИНН</label>
+                    <span>Для таможенного оформления</span>
+                  </div>
+                </div>
+              </form>
+            </article>
+          </section>
+        </div>
+        <aside>
+          <div class="aside__calculate calculate">
+            <div class="calculate__title">
+              <div>Итого</div>
+              <div>
+                <span class="calculate__price">2 101 063</span>
+                <span>сом</span>
+              </div>
+            </div>
+            <div class="calculate__total">
+              <div>203 товара</div>
+              <div class="calculate__full-price">2 302 048 сом</div>
+            </div>
+            <div class="calculate__discount">
+              <div>Скидка</div>
+              <div>−200 985 сом</div>
+            </div>
+            <div class="calculate__delivery">
+              <div>Доставка</div>
+              <div>Бесплатно</div>
+            </div>
+          </div>
+          <div class="aside__delivery">
+            <div class="aside__delivery-title">
+              <div>Доставка в пункт выдачи</div>
+              <button class="modal__button-delivery"></button>
+            </div>
+            <div class="aside__delivery-address">
+              <div>Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
+              <div>5–8 фев</div>
+            </div>
+            <div class="aside__delivery-return">
+              <span></span>
+              <div>
+                <span>Обратная доставка товаров на склад при отказе —</span>
+                <span>бесплатно</span>
+                <span class="delivery-return__hide">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</span>
+              </div>
+            </div>
+          </div>
+          <div class="aside__payment">
+            <div class="aside__payment-title">
+              <div>Оплата картой</div>
+              <button class="modal__button-payment"></button>
+            </div>
+            <div class="aside__payment-card">
+              <span class="payment__icon"><span class="icon-mir"></span></span>
+              <span>1234 12•• •••• 1234</span>
+            </div>
+            <div class="aside__payment-check">
+              <div>
+                <input class="aside__checkbox checkbox" type="checkbox"/>
+                <span class="aside__custom-checkbox custom-checkbox"></span>
+                <label>Списать оплату сразу</label>
+              </div>
+              <div>Спишем оплату с карты при получении</div>
+            </div>
+          </div>
+          <div class="aside__button">
+            <button>Заказать</button>
+            <div class="aside__agreement">
+              <input checked type="checkbox"/>
+              <span></span>
+              <div>Соглашаюсь с правилами пользования торговой площадкой и возврата</div>
+            </div>
+          </div>
+        </aside>
+      </main>
+    <footer>
+      <div><span>© 2022</span><span>ООО «Товары и точка»</span></div>
+      <nav class="mobile-tabbar">
+        <button></button>
+        <button></button>
+        <button class="mobile-buttons__bucket"><span>3</span></button>
+        <button></button>
+        <button></button>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

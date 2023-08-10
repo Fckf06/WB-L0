@@ -1,0 +1,58 @@
+@import url('selected-goods.css');
+@import url('missing-goods.css');
+@import url('goods-delivery.css');
+
+.container {
+  overflow-x: hidden;
+  max-height: 100%;
+  min-width: none;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+main {
+  background-color: rgba(246, 246, 250, 1);
+  border-radius: 24px;
+  margin-top: -24px;
+  padding: 35px 24px 49px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper__main {
+  flex: 1 1 auto;
+  max-width: 891px;
+  min-width: none;
+}
+.wrapper__aside {
+  max-height: 604px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+ h1 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.28px;
+}
+.goods-list {
+  max-width: 891px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+@media (max-width: 1023px) {
+  main {
+    padding: 0;
+    flex-flow: column;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2px;
+    letter-spacing: -0.2px;
+    margin-bottom:3px;
+    padding: 27px 16px 0 16px; 
+  }
+}
