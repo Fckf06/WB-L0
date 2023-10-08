@@ -4,7 +4,7 @@ header {
   color: white;
   background-color: rgba(103, 37, 168, 1);
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .header__item {
   display: flex;
@@ -44,6 +44,7 @@ header {
   margin-left: 28px;
   flex: 1 1 auto;
   display: flex;
+  max-width: 970px;
 }
 .header-search > form {
   display: flex;
