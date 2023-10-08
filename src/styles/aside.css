@@ -64,7 +64,7 @@ aside {
   justify-content: space-between;
 }
 .aside__delivery-title > button {
-  background-image: url('../img/edit.png');
+  background-image: url('../img/edit.svg');
   width: 20px;
   height: 20px;
   transition: 0.1s;
@@ -102,7 +102,7 @@ aside {
   z-index: 0;
 }
 .aside__delivery-return > span {
-  background-image: url('../img/price\ shipping.png');
+  background-image: url('../img/price\ shipping.svg');
   width: 22px;
   height: 22px;
   margin-right: 8px;
@@ -148,7 +148,7 @@ aside {
   min-height: 24px;
 }
 .aside__payment-title > button {
-  background-image: url('../img/edit.png');
+  background-image: url('../img/edit.svg');
   width: 20px;
   height: 20px;
   transition: 0.1s;
@@ -253,6 +253,12 @@ aside {
 .aside__agreement > input:checked + span {
   background-image: url('../img/check.svg');
 }
+
+@media (max-width: 1024px) {
+  aside {
+    padding: 16px 25px 24px 23px;
+  }
+}
 @media (max-width: 1023px) {
   aside {
     min-height: 320px;
@@ -298,4 +304,10 @@ aside {
   .aside__button > button {
     min-width: 100%;
   }
+}
+@media (max-width: 450px) {
+  .aside__delivery-return > div > span:nth-child(2) {
+    margin-left: 1px;
+  }
+  
 }

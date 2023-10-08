@@ -27,12 +27,12 @@ const toggleAccordeon = (e, elem) => {
           span.remove()
           accordion.insertAdjacentHTML('afterbegin', `<p>${amount} · ${price}</p>`)
           elem.style.display = 'none'
-        },400)
+        }, 100)
 
       } else {
         setTimeout(() => {
           elem.style.display = 'none'
-        },400)
+        }, 100)
       }
 
     } else if (e.target.classList.contains('accordion-hide')) {
@@ -47,12 +47,12 @@ const toggleAccordeon = (e, elem) => {
           accordion.firstElementChild.remove()
           accordion.prepend(input, span, label)
           elem.style.display = ''
-        },400)
+        }, 100)
 
       }  else {
         setTimeout(() => {
           elem.style.display = ''
-        },400)
+        }, 100)
       }
     } else {
       e.target.classList.add('accordion-hide')
@@ -67,11 +67,11 @@ const toggleAccordeon = (e, elem) => {
           span.remove()
           accordion.insertAdjacentHTML('afterbegin', `<p>${amount} · ${price}</p>`)
           elem.style.display = 'none'
-        },400)
+        }, 100)
       }  else {
         setTimeout(() => {
           elem.style.display = 'none'
-        },400)
+        }, 100)
       }
     }
 }

@@ -167,7 +167,6 @@
   font-size: 20px;
   line-height: 24px;
   padding: 0 10px 5px;
-  margin-left: 2px;
 }
 .item-goods__counter-items > span {
   font-size: 16px;
@@ -193,30 +192,35 @@
 }
 .item-goods__icons {
   display: flex;
-  margin-top: 8px;
+  margin-top: 10px;
   margin-left: 44px;
 }
 .item-goods__icons > span{
-  height: 20px;
-  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
   cursor: pointer;
   transition: 0.1s;
 }
 .item-goods__icons > span:nth-child(1) {
-  background-image: url('../img/like.png');
-  margin-right: 16px;
+  background-image: url('../img/like.svg');
+  width: 20px;
+  height: 20px;
+  margin-right: 19px;
 }
 .item-goods__icons > span:nth-child(2) {
-  background-image: url('../img/delete.png');
+  background-image: url('../img/delete.svg');
 }
 .item-goods__icons > span:nth-child(1):hover {
-  background-image: url('../img/like-active.png');
+  background-image: url('../img/like-active.svg');
 }
 .item-goods__icons > span:nth-child(2):hover {
   background-image: url('../img/delete-active.svg');
 }
 .item-goods__icons > span:active {
   opacity: 0.5;
+}
+.item-goods__icons > span:nth-child(1).favorite {
+  background-image: url('../img/like-active.svg');
 }
 .item-goods__price {
   flex: 1 1 auto;
@@ -225,6 +229,8 @@
   align-items: end;
   position: relative;
   max-width: 126px;
+  margin-top: -1px;
+  margin-right: -1px;
 }
 .item-goods__price > div:nth-child(1).price_2 {
   margin: -3px 0 0 2.5px;
@@ -298,6 +304,20 @@
   line-height: 24px;
   font-weight: 700;
   text-align: right;
+}
+@media (max-width: 1024px) {
+  .item-goods__icons { 
+    align-items: center;
+    justify-content: end;
+    margin: 10px 0 0 5px;
+
+  }
+  .item-goods__icons > span:nth-child(1) {
+    margin-right: 17px;
+  }
+  .item-goods__icons > span:nth-child(2) {
+    margin-left: 0px;
+  }
 }
 @media (max-width: 1023px) {
   .selected-goods__accordion {
@@ -435,6 +455,22 @@
   }
   .item-goods__name {
     max-width: 192px;
+  }
+  .item-goods__counter-items {
+    margin: 10px 2px 0 0;
+  }
+  .item-goods__counter-items > span {
+    margin-left: 1px;
+  }
+  .item-goods__counter-items > button {
+    margin-top: -8px;
+  }
+  #accordion-selected {
+    margin-right: 3px;
+  }
+
+  .item-goods__icons { 
+    margin: 14px 10px 0 0;
   }
 
 }

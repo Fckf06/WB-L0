@@ -6,6 +6,8 @@ const total_discount = document.querySelector('.calculate__discount').lastElemen
 const total_goods = document.querySelector('.calculate__total').firstElementChild
 const order_button = document.querySelector('.aside__button > button')
 const order_checkbox = document.querySelector('.aside__checkbox')
+const bucket_amount = document.getElementById('bucket-amount')
+const mobile_bucket = document.querySelector('.mobile-buttons__bucket > span')
 
 const calculateTotalPrice = (e, data) => {
 
@@ -22,6 +24,18 @@ const calculateTotalPrice = (e, data) => {
     total_full_price.innerText = convertSum(sum_full_price, ' ') + ' сом'
     total_discount.innerText = '−' + convertSum(discount, ' ') + ' сом'
     total_goods.innerText = convertSum(sum_of_goods, ' ') + ' ' + getEndingText(sum_of_goods)
+
+    bucket_amount.innerText = sum_of_goods
+    mobile_bucket.innerText = sum_of_goods
+    
+    if (sum_of_goods === 0) {
+      mobile_bucket.style.display = 'none'
+      bucket_amount.style.display = 'none'
+    } else {
+      mobile_bucket.style.display = 'inline-flex'
+      bucket_amount.style.display = 'inline-flex'
+    }
+
     if (order_checkbox.checked) {
       order_button.innerText ='Оплатить ' + total_price.innerText + ' сом'
     } else if (!order_checkbox.checked) {

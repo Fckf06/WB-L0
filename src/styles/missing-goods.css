@@ -12,7 +12,7 @@
   width: 20px;
   height: 22px;
   margin: 3px 0 0 0;
-  transition: 1s;
+  transition: 0.1s;
   transform: rotate(0deg);
 }
 .missing-goods__list {
@@ -66,33 +66,37 @@
 }
 .item-missing__icons > span:nth-child(1) {
   display: flex;
-  background-image: url('../img/like.png');
-  margin-right: 16px;
+  background-image: url('../img/like.svg');
+  margin-right: 18px;
 }
 .item-missing__icons > span:nth-child(2) {
   display: flex;
-  background-image: url('../img/delete.png');
+  margin-right: -3px;
+  background-image: url('../img/delete.svg');
 }
 .item-missing__icons > span:nth-child(1):hover {
-  background-image: url('../img/like-active.png');
+  background-image: url('../img/like-active.svg');
 }
 .item-missing__icons > span:nth-child(2):hover {
   background-image: url('../img/delete-active.svg');
+}
+.item-missing__icons > span:nth-child(1).favorite {
+  background-image: url('../img/like-active.svg');
 }
 .item-missing__icons > span:active {
   opacity: 0.5;
 }
 .accordion-hide {
   animation-name: hide;
-  animation-duration: 1s;
+  animation-duration: 0.1s;
   animation-fill-mode: forwards;
-  transition: 1s;
+  transition: 0.1s;
 }
 .accordion-show {
   animation-name: show;
-  animation-duration: 1s;
+  animation-duration: 0.1s;
   animation-fill-mode: forwards;
-  transition: 1s;
+  transition: 0.1s;
 }
 @keyframes hide {
  0%{
@@ -112,15 +116,15 @@
 }
 .list-dissappear {
   animation-name: dissappear;
-  animation-duration: 1s;
+  animation-duration: 0.1s;
   animation-fill-mode: forwards;
-  transition: 1s;
+  transition: 0.1s;
 }
 .list-appear {
   animation-name: appear;
-  animation-duration: 1s;
+  animation-duration: 0.1s;
   animation-fill-mode: forwards;
-  transition: 1s;
+  transition: 0.1s;
 }
 @keyframes appear {
   0%{
@@ -200,5 +204,7 @@
   .item-missing__name {
     max-width: 192px;
   }
-
+  .item-missing__icons > span:nth-child(1) {
+    margin: 0 25px 0 0;
+  }
 }

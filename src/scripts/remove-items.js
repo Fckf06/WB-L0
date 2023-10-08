@@ -1,7 +1,4 @@
-const bucket_amount = document.getElementById('bucket-amount')
-const mobile_bucket = document.querySelector('.mobile-buttons__bucket > span')
 const missing_amount = document.querySelector('.missing-goods__accordion').firstElementChild
-const item_goods = document.getElementsByClassName('item-goods')
 const item_missing = document.getElementsByClassName('item-missing')
 
 const removeItem = (e, data) => {
@@ -15,15 +12,7 @@ const removeItem = (e, data) => {
       
       setTimeout(() => {
         e.target.closest('.item-goods').remove()
-
-        if (item_goods.length) {
-          bucket_amount.innerText = item_goods.length
-          mobile_bucket.innerText = item_goods.length
-        } else {
-          bucket_amount.style.display = 'none'
-          mobile_bucket.style.display = 'none'
-        }
-      }, 400)
+      }, 100)
 
     } else {
       e.target.closest('.item-missing').classList.add('list-dissappear')
@@ -36,7 +25,7 @@ const removeItem = (e, data) => {
         } else {
           missing_amount.innerText = `Отсутствуют · ${item_missing.length} товаров`
         }
-      }, 400)
+      }, 100)
     }
   }
 }

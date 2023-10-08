@@ -24,12 +24,12 @@
       </div>
       <div class="header__item header-buttons">
         <div class="header-buttons__button">
-          <img src="./src/img/user.png"/>
+          <img src="./src/img/user.svg"/>
           <div>Профиль</div>
         </div>
         <div class="header-buttons__button__bucket">
-          <img src="./src/img/basket.png"/>
-          <span id="bucket-amount">3</span>
+          <img src="./src/img/basket.svg"/>
+          <span id="bucket-amount">203</span>
           <div>Корзина</div>
         </div>
       </div>
@@ -333,25 +333,25 @@
                   <form class="modal__form">
                     <div class="form-wrapper"> 
                       <div class="modal__input modal__input--delivery">
-                        <input checked type="radio" name="card"/>
+                        <input checked type="radio" id="card-5" name="card"/>
                         <span></span>
-                        <label>
+                        <label for="card-5">
                           <span class="radio__text">Бишкек, улица Табышалиева, 57</span>
                         </label>
                         <button class="modal_del-button"></button>
                       </div>
                       <div class="modal__input modal__input--delivery">
-                        <input type="radio" name="card"/>
+                        <input type="radio" id="card-6" name="card"/>
                         <span></span>
-                        <label>
+                        <label for="card-6">
                           <span class="radio__text">Бишкек, улица Жукеева-Пудовкина, 77/1</span>
                         </label>
                         <button class="modal_del-button"></button>
                       </div>
                       <div class="modal__input modal__input--delivery">
-                        <input type="radio" name="card"/>
+                        <input type="radio" id="card-7" name="card"/>
                         <span></span>
-                        <label>
+                        <label for="card-7">
                           <span class="radio__text">Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</span>
                         </label>
                         <button class="modal_del-button"></button>
@@ -386,33 +386,33 @@
                   <form class="modal__form">
                     <div class="form-wrapper">
                       <div class="modal__input input-payment">
-                        <input checked type="radio" name="card"/>
+                        <input checked type="radio" id="card-1" name="card"/>
                         <span></span>
-                        <label>
+                        <label for="card-1">
                           <span class="radio__icon"><span class="icon-mir"></span></span>
                           <span class="radio__text">1234 56•• •••• 1234</span>
                         </label>
                       </div>
                       <div class="modal__input input-payment">
-                        <input type="radio" name="card"/>
+                        <input type="radio" id="card-2" name="card"/>
                         <span></span>
-                        <label>
+                        <label for="card-2">
                           <span class="radio__icon"><span class="icon-visa"></span></span>
                           <span class="radio__text">1234 56•• •••• 1234</span>
                         </label>
                       </div>
                       <div class="modal__input input-payment">
-                        <input type="radio" name="card"/>
+                        <input type="radio" id="card-3" name="card"/>
                         <span></span>
-                        <label>
+                        <label for="card-3">
                           <span class="radio__icon"><span class="icon-mastercard"></span></span>
                           <span class="radio__text">1234 56•• •••• 1234</span>
                         </label>
                       </div>
                       <div class="modal__input input-payment">
-                        <input type="radio" name="card"/>
+                        <input type="radio" id="card-4" name="card"/>
                         <span></span>
-                        <label>
+                        <label for="card-4">
                           <span class="radio__icon"><span class="icon-maestro"></span></span>
                           <span class="radio__text">1234 56•• •••• 1234</span>
                         </label>
@@ -522,7 +522,7 @@
           <div class="aside__button">
             <button>Заказать</button>
             <div class="aside__agreement">
-              <input checked type="checkbox"/>
+              <input disabled checked type="checkbox"/>
               <span></span>
               <div>Соглашаюсь с правилами пользования торговой площадкой и возврата</div>
             </div>
@@ -534,7 +534,7 @@
       <nav class="mobile-tabbar">
         <button></button>
         <button></button>
-        <button class="mobile-buttons__bucket"><span>3</span></button>
+        <button class="mobile-buttons__bucket"><span>203</span></button>
         <button></button>
         <button></button>
       </nav>

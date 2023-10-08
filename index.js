@@ -13,12 +13,13 @@ import handlerModalDelivery from "./src/scripts/handler-modal-delivery.js"
 import validateReceiverForm from "./src/scripts/validate-receiver-form.js"
 import "./src/scripts/validate-inputs.js"
 import removeDeliveryPoints from "./src/scripts/remove-delivery-points.js"
-
+import addToFavorite from "./src/scripts/add-to-favorite.js"
 const data = getItemPrice()
 
 document.addEventListener('click', (e) => {
   toggleCheckbox(e, data)
   removeItem(e, data)
+  addToFavorite(e)
   gedDeliveryItems(e, data)
   toggleAsideNotice(e)
   handelerCounter(e, data)

@@ -1,6 +1,6 @@
 footer {
   min-height: 88px;
-  min-width: 100%;
+  width: 100%;
   color: white;
   background-color: rgba(103, 37, 168, 1);
   display: flex;
@@ -47,10 +47,10 @@ footer > div > span:nth-child(1) {
 }
 .mobile-buttons__bucket > span {
   position: absolute;
-  left: 21px;
+  left: 19px;
   bottom: 17px;
-  width: 12px;
-  height: 14px;
+  width: 17px;
+  height: 17px;
   font-size: 10px;
   line-height: 18px;
   font-weight: 700;

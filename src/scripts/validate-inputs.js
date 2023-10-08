@@ -39,7 +39,7 @@
       tel.addEventListener('paste', e => {
         e.preventDefault(e)
       })
-    }
+    } 
     elem.addEventListener('focusout', e => {
       if (!test.test(elem.value) && elem.value) {
         console.log('INVALID')
@@ -48,6 +48,9 @@
       }
     })
     elem.addEventListener('input', e => {
+      if (elem === inn) {
+        elem.value = elem.value.replace(/([A-zА-яЁё])/, '')
+      }
       if (!test.test(elem.value) && elem.value) {
       } else {
         elem.closest('div').classList.remove('invalid')

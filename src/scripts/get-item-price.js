@@ -10,7 +10,7 @@ const getItemPrice = () => {
       price: +prices[i].children[0].innerText.match(/\d+/g).join(''),
       full_price: +prices[i].children[1].innerText.match(/\d+/g).join(''),
       amount: +amounts[i].innerText,
-      checked: true
+      checked: true,
     }
   }
   return data
